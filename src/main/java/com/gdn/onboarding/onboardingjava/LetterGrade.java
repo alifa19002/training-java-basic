@@ -11,15 +11,17 @@ public class LetterGrade {
         else if(nilai>=50 && nilai <75){
             return 'B';
         }
-        else if(nilai>=75 && nilai <100){
+        else if(nilai>=75 && nilai <=100){
             return 'A';
         }
-        return 'X';
+        else{
+            return 'X';
+        }
     }
 
     public static void main(String[] args) {
         LetterGrade lettergrade = new LetterGrade();
-        char grading = lettergrade.setGrade(78);
+        char grading = lettergrade.setGrade(10);
         System.out.println("Grade yang didapat = " + grading);
 		//SpringApplication.run(OnboardingJavaApplication.class, args);
 	}
